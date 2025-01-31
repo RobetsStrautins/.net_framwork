@@ -1,0 +1,6 @@
+Course: Mathematics, Teachers Name:John, Surname:Doe, Gender:Men, Date:23/05/2015 00:00:00
+Course: Physics, Teachers Name:Jane, Surname:Smith, Gender:Women, Date:19/08/2018 00:00:00
+Course: Chemistry, Teachers Name:Jane, Surname:Smith, Gender:Women, Date:19/08/2018 00:00:00
+Course: Biology, Teachers Name:Jane, Surname:Smith, Gender:Women, Date:19/08/2018 00:00:00
+Course: History, Teachers Name:Roberts, Surname:Kipurs, Gender:Men, Date:14/03/2012 00:00:00
+Course: Computer Science, Teachers Name:John, Surname:Doe, Gender:Men, Date:23/05/2015 00:00:00

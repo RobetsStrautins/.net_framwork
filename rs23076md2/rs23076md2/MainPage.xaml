@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rs23076md2.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            
+            Spacing="25">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label
+                    Text="Hello, World!!!"
+                    Style="{StaticResource Headline}"
+                    SemanticProperties.HeadingLevel="Level1" 
+                    Grid.Column="1"/>
+
+                <Button
+                    WidthRequest="200"
+                    x:Name="Back"
+                    FontSize="25"
+                    Text="Back"
+                    HorizontalOptions="Start"
+                    IsVisible="False"
+                    Clicked="OnBackClicked"
+                    Grid.Column="0"/>
+
+            </Grid>
+
+
+            <StackLayout
+                x:Name="ButtonGroup" 
+                Orientation="Vertical"
+                Padding="30,0"
+                Spacing="25">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button
+                        WidthRequest="200"
+                        x:Name="Data"
+                        FontSize="25"
+                        Text="See data"
+                        Grid.Column="0"
+                        HorizontalOptions="Center"
+                        Clicked="OnDataClicked"/>
+
+                    <Button
+                        WidthRequest="200"
+                        x:Name="Save"
+                        FontSize="25"
+                        Text="Save"
+                        Grid.Column="1"
+                        HorizontalOptions="Center" 
+                        Clicked="OnSaveClicked"/>
+
+                    <Button
+                        WidthRequest="210"
+                        x:Name="Button3"
+                        FontSize="25"
+                        Text="Load"
+                        Grid.Column="2"
+                        HorizontalOptions="Center"
+                        Clicked="OnLoadClicked"/>
+
+                    <Button
+                        WidthRequest="210"
+                        x:Name="Button5"
+                        FontSize="25"
+                        Text="Load test date"
+                        Grid.Column="3"
+                        HorizontalOptions="Center"
+                        Clicked="OnTestClicked"/>
+                    <Button
+                        WidthRequest="210"
+                        x:Name="Button6"
+                        FontSize="25"
+                        Text="Clear data"
+                        Grid.Column="4"
+                        HorizontalOptions="Center"
+                        Clicked="OnClearClicked"/>
+                </Grid>
+            </StackLayout>
+
+
+            <StackLayout
+                x:Name="ButtonGroup1" 
+                Orientation="Vertical"
+                Padding="30,0"
+                Spacing="25"
+                IsVisible="False">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button
+                        WidthRequest="200"
+                        x:Name="Button10"
+                        FontSize="25"
+                        Text="Teacher"
+                        Grid.Column="0"
+                        HorizontalOptions="Center"
+                        Clicked="TeacherClicked"/>
+
+                    <Button
+                        WidthRequest="200"
+                        x:Name="Button11"
+                        FontSize="25"
+                        Text="Student"
+                        Grid.Column="1"
+                        HorizontalOptions="Center" 
+                        Clicked="StudentClicked"/>
+
+                    <Button
+                        WidthRequest="210"
+                        x:Name="Button12"
+                        FontSize="25"
+                        Text="Course"
+                        Grid.Column="2"
+                        HorizontalOptions="Center"
+                        Clicked="CourseClicked"/>
+
+                    <Button
+                        WidthRequest="210"
+                        x:Name="Button13"
+                        FontSize="25"
+                        Text="Assignment"
+                        Grid.Column="3"
+                        HorizontalOptions="Center"
+                        Clicked="AssignmentClicked"/>
+                    <Button
+                        WidthRequest="210"
+                        x:Name="Button14"
+                        FontSize="25"
+                        Text="Submission"
+                        Grid.Column="4"
+                        HorizontalOptions="Center"
+                        Clicked="SubmissionClicked"/>
+                </Grid>
+            </StackLayout>
+
+            <ScrollView>
+                <VerticalStackLayout x:Name="TeacherListStack" Padding="10" Spacing="10" />
+            </ScrollView>
+
+
+            <Label
+                    Text="Dati tika ."
+                    x:Name="Label1"
+                    FontSize="25"
+                    IsVisible="False" />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+
